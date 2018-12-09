@@ -12,5 +12,11 @@ function quiz(result){
 }
 // User Logic
 $(document).ready(function(){
-
+$("#button1").click(function(event){
+  event.preventDefault();
+  $("#question2").show();
+});
+$("#finalScore").text(function(){
+  
+});
 });

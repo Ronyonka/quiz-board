@@ -11,25 +11,26 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="container-fluid">
     <h1>So You Think You Can JS?</h1>
-    <ol>
+
       <!-- first question -->
       <div id="question1">
         <form id="q1">
-          <li>What is the shortform of HTML?</li>
+          <p>What is the shortform of HTML?</p>
             <label><input type="radio" name="q1" value="1">HTML</label>
             <label><input type="radio" name="q1" value="0">HMLT</label>
             <label><input type="radio" name="q1" value="0">MLHT</label>
         </form>
-        <button type="button" name="button" id="qs1">Next</button>
+
       </div>
 
       <!-- end of first question -->
+        <button id="button1" class="qs1">Next</button>
       <!-- second question -->
       <div id="question2">
         <form id="q2">
-          <li>What is the other name for JavaScript?</li>
+          <p>What is the other name for JavaScript?</p>
             <label><input type="radio" name="q2" value="1">ECMAscript</label>
             <label><input type="radio" name="q2" value="0">JS</label>
             <label><input type="radio" name="q2" value="0">Who knows</label>
@@ -41,7 +42,7 @@
       <!-- third question -->
       <div id="question3">
         <form id="q3">
-          <li>Is C++ a low level language?</li>
+          <p>Is C++ a low level language?</p>
           <div class="qs3">
             <label><input type="radio" name="q3" value="0">Yes</label>
           </div>
@@ -54,7 +55,7 @@
       </div>
 
       <!-- end of third question -->
-    </ol>
+
 
     <div id="results">
       <p id="response"></p>
