@@ -1,3 +1,4 @@
+// Business Logic
 function quiz(result){
   var total = 0;
   var choices = ["q1", "q2", "q3"];
@@ -9,3 +10,7 @@ function quiz(result){
         }
       );
 }
+// User Logic
+$(document).ready(function(){
+
+});
