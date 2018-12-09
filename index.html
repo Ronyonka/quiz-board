@@ -12,43 +12,53 @@
 
 <body>
   <div class="container">
-    <div class="row">
-      <h1>So You Think You Can JS?</h1>
-      <ol>
-        <form class="q1">
+    <h1>So You Think You Can JS?</h1>
+    <ol>
+      <!-- first question -->
+      <form class="q1">
         <li>What is the shortform of HTML?</li>
-          <div class="question1">
-            <label><input type="radio" name="q1" value="1">HTML</label>
-          </div>
-          <div class="question1">
-            <label><input type="radio" name="q1" value="0">HMLT</label>
-          </div>
-          <div class="question1">
-            <label><input type="radio" name="q1" value="0">MLHT</label>
-          </div>
-        </form>
-        <form class="q2">
-          <li>What is the other name for JavaScript?</li>
-          <div class="question2">
-              <label><input type="radio" name="q2" value="1">ECMAscript</label>
-          </div>
-          <div class="question2">
-              <label><input type="radio" name="q2" value="0">JS</label>
-          </div>
-          <div class="question2">
-              <label><input type="radio" name="q2" value="0">Who knows</label>
-          </div>
-          <form class="q3">
-            <li>Is C++ a low level language?</li>
-            <div class="question3">
-                <label><input type="radio" name="q3" value="0">Yes</label>
-            </div>
-            <div class="question3">
-                <label><input type="radio" name="q3" value="1">No</label>
-            </div>
-          </form>
-        </form>
-      </ol>
+        <div class="question1">
+          <label><input type="radio" name="q1" value="1">HTML</label>
+        </div>
+        <div class="question1">
+          <label><input type="radio" name="q1" value="0">HMLT</label>
+        </div>
+        <div class="question1">
+          <label><input type="radio" name="q1" value="0">MLHT</label>
+        </div>
+      </form>
+      <!-- end of first question -->
+      <!-- second question -->
+      <form class="q2">
+        <li>What is the other name for JavaScript?</li>
+        <div class="question2">
+          <label><input type="radio" name="q2" value="1">ECMAscript</label>
+        </div>
+        <div class="question2">
+          <label><input type="radio" name="q2" value="0">JS</label>
+        </div>
+        <div class="question2">
+          <label><input type="radio" name="q2" value="0">Who knows</label>
+        </div>
+      </form>
+      <!-- end of second question -->
+      <!-- third question -->
+      <form class="q3">
+        <li>Is C++ a low level language?</li>
+        <div class="question3">
+          <label><input type="radio" name="q3" value="0">Yes</label>
+        </div>
+        <div class="question3">
+          <label><input type="radio" name="q3" value="1">No</label>
+        </div>
+      </form>
+      <!-- end of third question -->
+    </ol>
+
+    <div id="results">
+      <p id="response"></p>
+      <p>Your Score is:</p>
+      <p id="finalScore"></p>
     </div>
   </div>
 
