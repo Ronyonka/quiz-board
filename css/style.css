@@ -5,16 +5,32 @@ h1{
 }
 body{
   background-color: firebrick;
+  padding-bottom: 80px;
 }
 .jumbotron{
   background-color: salmon;
   font-family: Arial;
+  padding-top: 10px;
 }
 .row-2{
 
   text-align: center;
 }
-#result{
+.finalResult{
   font-size: 3em;
   font-weight: bold;
+}
+#col-3{
+  padding-bottom: 32px;
+}
+.panel-body{
+  background-color: indianred;
+}
+button{
+  background-color: black;
+  color: white;
+  border: none;
+}
+#score{
+  display: none;
 }

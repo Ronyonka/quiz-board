@@ -7,7 +7,13 @@ function quizBoard() {
 
 
   var finalScore = parseInt(qs1) + parseInt(qs2) + parseInt(qs3) + parseInt(qs4);
-  $("#result").text("Your score is " + finalScore + "%");
+  $("#result").text(finalScore);
 }
 
 // User logic
+$(document).ready(function(){
+  $("#button1").click(function(){
+    $("#form").hide();
+    $("#score").show();
+  });
+});
