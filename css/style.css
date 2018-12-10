@@ -1,36 +1,45 @@
-h1{
+h1 {
   text-align: center;
-   font-family: 'Sofia';
-   font-size: 68px;
+  font-family: 'Sofia';
+  font-size: 68px;
 }
-body{
+
+body {
   background-color: firebrick;
   padding-bottom: 80px;
 }
-.jumbotron{
+
+.jumbotron {
   background-color: salmon;
   font-family: Arial;
   padding-top: 10px;
 }
-.row-2{
 
+.row-2 {
   text-align: center;
 }
-.finalResult{
+
+.finalResult {
   font-size: 3em;
   font-weight: bold;
 }
-#col-3{
+
+#col-3 {
   padding-bottom: 32px;
 }
-.panel-body{
+
+.panel-body {
   background-color: indianred;
 }
-button{
+.well{
+  background-color: indianred;
+}
+button {
   background-color: black;
   color: white;
   border: none;
 }
-#score{
+
+#score {
   display: none;
 }

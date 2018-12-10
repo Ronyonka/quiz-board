@@ -11,9 +11,13 @@ function quizBoard() {
 }
 
 // User logic
-$(document).ready(function(){
-  $("#button1").click(function(){
+$(document).ready(function() {
+  $("#button1").click(function() {
     $("#form").hide();
     $("#score").show();
   });
+  $("button2").click(function() {
+    $("#score").hide();
+    $("#form").show();
+  })
 });
