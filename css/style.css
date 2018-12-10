@@ -1,3 +1,10 @@
-/* #question2{
-  display: none;
-} */
+h1{
+  text-align: center;
+}
+body{
+  background-color: firebrick;
+}
+.jumbotron{
+  background-color: salmon;
+  font-family: Arial;
+}
