@@ -5,93 +5,105 @@
   <meta charset="utf-8">
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/style.css" rel="stylesheet" type="text/css">
-
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
   <title>So You Think You Can JS?</title>
 </head>
 
 <body>
   <div class="container">
+    <div class="jumbotron">
+      <h1>So You Think You Can JS?</h1>
+    </div>
     <form>
-      <div class="jumbotron">
-        <h1>So You Think You Can JS?</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <div id="question1">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <p>1. Which one of these are not datatypes?</p>
+              </div>
+              <div class="panel-body">
+                <label><input type="radio" name="q1" value="0">Strings</label><br>
+                <label><input type="radio" name="q1" value="0">Boolean</label><br>
+                <label><input type="radio" name="q1" value="0">null</label><br>
+                <label><input type="radio" name="q1" value="25">elif</label><br>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div id="question2">
+            <div class="panel panel-default">
+
+              <div class="panel-heading">
+                <p>2. Which HTML element should we link our JavaScript file?</p>
+              </div>
+              <div class="panel-body">
+                <label><input type="radio" name="q2" value="0"> &lt;head&gt;</label><br>
+                <label><input type="radio" name="q2" value="0"> &lt;body&gt;</label><br>
+                <label><input type="radio" name="q2" value="25">both the &lt;head&gt;and the &lt;body&gt; elements are okay</label><br>
+                <label><input type="radio" name="q2" value="0">&lt;div&gt;</label><br>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div id="question3">
+            <div class="panel panel-default">
+
+
+              <div class="panel-heading">
+                <p>3. What will the consol log if we input: <br>
+                  "spider".charAt(1);</p>
+              </div>
+              <div class="panel-body">
+                <label><input type="radio" name="q3" value="25">"p"</label><br>
+                <label><input type="radio" name="q3" value="0">1</label><br>
+                <label><input type="radio" name="q3" value="0">"pider"</label><br>
+                <label><input type="radio" name="q3" value="0">"s"</label><br>
+              </div>
+
+
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div id="question4">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <p>4. What value will be returned:<br>
+                  Var fruits= ["apples", "orange", "passion fruit", "kiwi"]<br>
+                  fruits.pop();<br></p>
+              </div>
+              <div class="panel-body">
+                <label><input type="radio" name="q4" value="0">"apples"</label><br>
+                <label><input type="radio" name="q4" value="0">["apples", "orange", "passion fruit"]</label><br>
+                <label><input type="radio" name="q4" value="0">["orange", "passion fruit", "kiwi"]</label><br>
+                <label><input type="radio" name="q4" value="25">"kiwi"</label><br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row-2">
+        <button type="button" name="button" onclick="quizBoard()">Submit</button>
+        <div id="result">
+        </div>
       </div>
 
-      <!-- first question -->
-      <div id="question1">
-        <!-- <form id="q1"> -->
-        <p>1. Which one of these are not datatypes?</p>
-        <label><input type="radio" name="q1" value="0">Strings</label><br>
-        <label><input type="radio" name="q1" value="0">Boolean</label><br>
-        <label><input type="radio" name="q1" value="0">null</label><br>
-        <label><input type="radio" name="q1" value="20">elif</label><br>
-        <!-- </form> -->
-
-      </div>
-
-      <!-- end of first question -->
-      <!-- <button id="button1" class="qs1">Next</button> -->
-      <!-- second question -->
-      <div id="question2">
-        <p>2. Which HTML element should we link our JavaScript file?</p>
-        <label><input type="radio" name="q2" value="0"> &lt;head&gt;</label><br>
-        <label><input type="radio" name="q2" value="0"> &lt;body&gt;</label><br>
-        <label><input type="radio" name="q2" value="20">both the &lt;head&gt;and the &lt;body&gt; elements are okay</label><br>
-        <label><input type="radio" name="q2" value="0">&lt;div&gt;</label><br>
-        <!-- <button type="button" name="button">Next</button>
-          <button type="button" name="button">Previous</button> -->
-      </div>
-      <!-- end of second question -->
-      <!-- third question -->
-      <div id="question3">
-        <!-- <form id="q3"> -->
-        <p>3. What will the consol log if we input: <br>
-          "spider".charAt(1);</p>
-        <label><input type="radio" name="q3" value="20">"p"</label><br>
-        <label><input type="radio" name="q3" value="0">1</label><br>
-        <label><input type="radio" name="q3" value="0">"pider"</label><br>
-        <label><input type="radio" name="q3" value="0">"s"</label><br>
-        <!-- </form> -->
-        <!-- <button type="button" name="button">Next</button>
-          <button type="button" name="button">Previous</button> -->
-      </div>
-
-      <!-- end of third question -->
-      <!-- fourth question -->
-      <div id="question4">
-        <p>4. What value will be returned:<br>
-          Var fruits= ["apples", "orange", "passion fruit", "kiwi"]<br>
-          fruits.pop();<br></p>
-        <label><input type="radio" name="q4" value="0">"apples"</label><br>
-        <label><input type="radio" name="q4" value="0">["apples", "orange", "passion fruit"]</label><br>
-        <label><input type="radio" name="q4" value="0">["orange", "passion fruit", "kiwi"]</label><br>
-        <label><input type="radio" name="q4" value="20">"kiwi"</label><br>
-        <!-- <button type="button" name="button">Next</button>
-          <button type="button" name="button">Previous</button> -->
-      </div>
-
-      <!-- end of fourth question -->
-      <!-- fifth question -->
-      <div id="question5">
-        <!-- <form id="q5"> -->
-        <p>5.Java and JavaScript are the same?</p>
-        <label><input type="radio" name="q5" value="0">True</label><br>
-        <label><input type="radio" name="q5" value="20">False</label><br>
-        <!-- </form> -->
-        <!-- <button type="button" name="button">Next</button>
-          <button type="button" name="button">Previous</button> -->
-      </div>
-      <button type="button" name="button" onclick="quizBoard()">Submit</button>
-      <!-- end of fifth question -->
-      <div id="result">
-      </div>
+    </form>
   </div>
-  </form>
-
-
 
 
   <script src="js/jquery-3.3.1.js"></script>
   <script src="js/script.js"></script>
+
 </body>
 
 </html>

@@ -1,5 +1,7 @@
 h1{
   text-align: center;
+   font-family: 'Sofia';
+   font-size: 68px;
 }
 body{
   background-color: firebrick;
@@ -7,4 +9,12 @@ body{
 .jumbotron{
   background-color: salmon;
   font-family: Arial;
+}
+.row-2{
+
+  text-align: center;
+}
+#result{
+  font-size: 3em;
+  font-weight: bold;
 }
