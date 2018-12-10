@@ -16,8 +16,4 @@ $(document).ready(function() {
     $("#form").hide();
     $("#score").show();
   });
-  $("button2").click(function() {
-    $("#score").hide();
-    $("#form").show();
-  })
 });
